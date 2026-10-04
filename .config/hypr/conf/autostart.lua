@@ -34,7 +34,8 @@ hl.on("hyprland.start", function ()
     end
 
     -- Autostart scripts
-    hl.exec_cmd("~/.config/ml4w/scripts/ml4w-autostart > ~/.mydotfiles/ml4w-autostart.log 2>&1")
+    -- Start Caelestia only after ml4w-autostart finishes (it runs "killall qs", which would stop Caelestia too)
+    hl.exec_cmd("sh -c '~/.config/ml4w/scripts/ml4w-autostart > ~/.mydotfiles/ml4w-autostart.log 2>&1; caelestia shell -d'")
 
     -- Load GTK settings
     hl.exec_cmd("~/.config/hypr/scripts/gtk.sh")

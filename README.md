@@ -13,6 +13,10 @@ Hyprland setup for Fedora 44: [ML4W dotfiles](https://github.com/mylinuxforwork/
 - **Display scale 1.25** (`.config/hypr/monitors.lua`).
 - **Super+Shift+W** opens the wallpaper picker, **Super+Ctrl+W** sets a random wallpaper.
 - **Fedora logo** in fastfetch when a terminal opens.
+- **Caelestia autostarts** after `ml4w-autostart` finishes (that script runs `killall qs`) — `.config/hypr/conf/autostart.lua`.
+- **Super+L** locks the screen (in addition to Super+Ctrl+L).
+- **English + Hebrew** keyboard layouts, switched with **Alt+Shift** (`.config/hypr/input.lua`).
+- **Wallpaper menu** reads `~/Wallpapers` (`.config/ml4w/settings/wallpaper-folder`; the images aren't in this repo).
 - **Dark mode for apps (Firefox etc.)**: `hyprland-session.target` starts `graphical-session.target`
   so the xdg-desktop-portals run under Hyprland (`.config/systemd/user/`, `.config/hypr/conf/autostart.lua`).
 
