@@ -1,0 +1,5 @@
+[Unit]
+Description=Hyprland session (starts graphical-session.target so portals and dark mode work)
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target
