@@ -49,6 +49,9 @@ hl.on("hyprland.start", function ()
     -- Load cliphist history
     hl.exec_cmd("wl-paste --watch cliphist store")
 
+    -- Start blueman applet
+    hl.exec_cmd("blueman-applet")
+
     -- Start autostart cleanup
     hl.exec_cmd("~/.config/hypr/scripts/cleanup.sh")
 end)

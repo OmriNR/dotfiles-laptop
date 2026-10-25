@@ -31,8 +31,8 @@ You can reload waybar with SUPER + SHIFT + B
     },
     "custom/quicklink_firefox": {
         "format": "",
-        "on-click": "firefox",
-        "tooltip-format": "Open Firefox"
+        "on-click": "zen-browser",
+        "tooltip-format": "Open Zen Browser"
     },
     "custom/quicklink_thunderbird": {
         "format": "",

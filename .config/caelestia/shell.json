@@ -1,5 +1,6 @@
 {
-    "background": {
-        "wallpaperEnabled": false
+    "background": { "wallpaperEnabled": false   },
+    "appearance": {
+        "transparency": { "enabled": true, "base": 0.85, "layers": 0.4}
     }
 }

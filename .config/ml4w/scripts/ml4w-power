@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 1. Define fallbacks as explicit functions to prevent quote-stripping issues
-lock_action()     { pidof hyprlock || hyprlock; }
+lock_action()     { caelestia shell lock lock; }
 suspend_action()  { systemctl suspend; }
 logout_action()   { hyprctl dispatch 'hl.dsp.exit()'; }
 reboot_action()   { systemctl reboot; }
